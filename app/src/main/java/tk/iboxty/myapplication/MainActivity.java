@@ -70,8 +70,16 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         Intent it = new Intent();
+                        it.putExtra("LoadCase",0);
                         it.setClass(MainActivity.this,LoadImage.class);
                         startActivity(it);
+                        break;
+                    case 1:
+                        it = new Intent();
+                        it.putExtra("LoadCase",1);
+                        it.setClass(MainActivity.this,LoadImage.class);
+                        startActivity(it);
+                        break;
                 }
             }
         });
